@@ -178,7 +178,7 @@ export default function Home() {
 
   const fetchStores = async () => {
     try {
-      const response = await fetch("https://tech0-gen-8-step3-app-py-5.azurewebsites.net");
+      const response = await fetch(`https://tech0-gen-8-step3-app-py-5.azurewebsites.net`);
       if (response.ok) {
         const data = await response.json();
         setStores(data);
