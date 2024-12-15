@@ -1,4 +1,8 @@
+import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../components/button";
+
 export default function Page() {
   const timeSlots = Array.from({ length: 16 }, (_, i) => {
     const hour = Math.floor(i / 2) + 10;
