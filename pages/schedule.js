@@ -133,23 +133,31 @@ export default function Page() {
     return schedules[date]?.[time]?.content;
   }
 
-  return (
-    <div className="min-h-screen bg-[#FFF8E7]">
-      {/* Navigation */}
-      <nav className="flex justify-end p-4">
-        <div className="space-x-4">
-    　    <Link href="/">
-           <Button className="bg-[#E6B422] hover:bg-[#D4A41B] text-white font-medium px-8 py-2 rounded">
+return (
+  <div className="min-h-screen bg-[#FFF8E7]">
+    {/* Navigation */}
+    <nav className="flex justify-end p-4">
+      <div className="space-x-4">
+        <Link href="/">
+          <button className="bg-[#E6B422] hover:bg-[#D4A41B] text-white font-medium px-8 py-2 rounded">
             投票
-           </Button>
-        　</Link>
+          </button>
+        </Link>
+        <Link href="/schedule">
           <button className="bg-[#E6B422] hover:bg-[#D4A41B] text-white font-medium px-8 py-2 rounded">
             配達スケジュール
+          </button>
+        </Link>
+        <Link href="/purchase">
           <button className="bg-[#E6B422] hover:bg-[#D4A41B] text-white font-medium px-8 py-2 rounded">
             購入
           </button>
-        </div>
-      </nav>
+        </Link>
+      </div>
+    </nav>
+  </div>
+);
+
   
       {/* Hero Section */}
       <div className="relative h-[200px] mb-8">
