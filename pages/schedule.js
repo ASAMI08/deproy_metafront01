@@ -153,7 +153,8 @@ export default function Page() {
           </button>
         </div>
       </nav>
-
+    </div>
+  
       {/* Hero Section */}
       <div className="relative h-[200px] mb-8">
         <div className="absolute inset-0 bg-[url('/images/654-480.jpg?height=200&width=1200')] bg-cover bg-center">
