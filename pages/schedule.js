@@ -141,8 +141,8 @@ export default function Page() {
           <button className="bg-[#E6B422] hover:bg-[#D4A41B] text-white font-medium px-8 py-2 rounded">
             <Link href="/index">
             投票
-            </Link>
           </button>
+            </Link>
           <button className="bg-[#E6B422] hover:bg-[#D4A41B] text-white font-medium px-8 py-2 rounded">
             配達スケジュール
           </button>
