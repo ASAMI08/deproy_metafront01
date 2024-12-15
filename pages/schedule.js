@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Page() {
   const timeSlots = Array.from({ length: 16 }, (_, i) => {
     const hour = Math.floor(i / 2) + 10;
