@@ -156,61 +156,57 @@ return (
         </Link>
       </div>
     </nav>
-  </div>
-);
 
-  
-      {/* Hero Section */}
-      <div className="relative h-[200px] mb-8">
-        <div className="absolute inset-0 bg-[url('/images/654-480.jpg?height=200&width=1200')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-black/40" />
-        </div>
-        <div className="relative h-full flex items-center justify-center">
-          <h1 className="text-white text-4xl font-bold">配達スケジュール</h1>
-        </div>
+    {/* Hero Section */}
+    <div className="relative h-[200px] mb-8">
+      <div className="absolute inset-0 bg-[url('/images/654-480.jpg?height=200&width=1200')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-black/40" />
       </div>
+      <div className="relative h-full flex items-center justify-center">
+        <h1 className="text-white text-4xl font-bold">配達スケジュール</h1>
+      </div>
+    </div>
 
-      {/* Schedule Content */}
-      <div className="container mx-auto px-4 pb-8">
-        <div className="bg-white shadow-md rounded-lg p-4">
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr>
-                  <th className="p-2 bg-[#FFA500] text-left min-w-[80px]">
-                    日時
+    {/* Schedule Content */}
+    <div className="container mx-auto px-4 pb-8">
+      <div className="bg-white shadow-md rounded-lg p-4">
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse">
+            <thead>
+              <tr>
+                <th className="p-2 bg-[#FFA500] text-left min-w-[80px]">
+                  日時
+                </th>
+                {dates.map((date) => (
+                  <th
+                    key={date}
+                    className="p-2 bg-[#FFA500] text-center min-w-[200px]"
+                  >
+                    {date}
                   </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {timeSlots.map((time) => (
+                <tr key={time}>
+                  <td className="p-2 bg-[#FFA500] border border-gray-200">
+                    {time}
+                  </td>
                   {dates.map((date) => (
-                    <th
-                      key={date}
-                      className="p-2 bg-[#FFA500] text-center min-w-[200px]"
+                    <td
+                      key={`${date}-${time}`}
+                      className="p-2 border border-gray-200 align-top"
                     >
-                      {date}
-                    </th>
+                      {getScheduleContent(date, time)}
+                    </td>
                   ))}
                 </tr>
-              </thead>
-              <tbody>
-                {timeSlots.map((time) => (
-                  <tr key={time}>
-                    <td className="p-2 bg-[#FFA500] border border-gray-200">
-                      {time}
-                    </td>
-                    {dates.map((date) => (
-                      <td
-                        key={`${date}-${time}`}
-                        className="p-2 border border-gray-200 align-top"
-                      >
-                        {getScheduleContent(date, time)}
-                      </td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-  );
-}
+  </div>
+);
