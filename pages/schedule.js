@@ -138,7 +138,7 @@ export default function Page() {
       {/* Navigation */}
       <nav className="flex justify-end p-4">
         <div className="space-x-4">
-    　    <Link href="/index">
+    　    <Link href="/">
            <Button className="bg-[#E6B422] hover:bg-[#D4A41B] text-white font-medium px-8 py-2 rounded">
             投票
            </Button>
