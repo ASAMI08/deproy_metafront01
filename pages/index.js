@@ -15,7 +15,7 @@ function Header() {
             投票
           </Button>
         </Link>
-        <Link href={`/store/${store.id}/purchase`}>
+        <Link href="/schedule">
           <Button className="bg-[#F2B950] hover:bg-[#E6A840] text-white">
             配達スケジュール
           </Button>
