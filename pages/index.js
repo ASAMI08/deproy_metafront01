@@ -161,7 +161,7 @@ function StoreCard({ store, onVoteChange }) {
                 +
               </Button>
             </div>
-            <Link href={`/store/${store.id}/purchase`}>
+            <Link href="/purchase">
               <Button className="bg-yellow-400 hover:bg-yellow-500 text-black">
                 購入
               </Button>
