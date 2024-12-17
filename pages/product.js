@@ -148,13 +148,13 @@ export default function ProductGrid() {
               </div>
               <div className="flex gap-4 p-4 bg-gray-50">
                 <button
-                  onClick={() => router.push(`/share/${product.id}`)}
+                  onClick={() => router.push("/share")}
                   className="flex-1 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
                 >
                   シェア希望
                 </button>
                 <button
-                  onClick={() => router.push(`/buy/${product.id}`)}
+                  onClick={() => router.push("/purchase")}
                   className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded"
                 >
                   買いたい
