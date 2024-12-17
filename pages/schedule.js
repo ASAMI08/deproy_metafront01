@@ -153,7 +153,7 @@ return (
             配達スケジュール
           </button>
         </Link>
-        <Link href="/purchase">
+        <Link href="/product">
           <button className="bg-[#E6B422] hover:bg-[#D4A41B] text-white font-medium px-8 py-2 rounded">
             購入
           </button>
