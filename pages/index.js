@@ -137,7 +137,7 @@ function StoreCard({ store, onVoteChange }) {
           )}
         </div>
         <div className="p-6">
-          <Link href={`/store/${store.id}`}>
+          <Link href="storeintroduction">
             <h4 className="text-xl font-bold hover:text-blue-600 transition-colors">
               {store.name}
             </h4>
@@ -161,7 +161,7 @@ function StoreCard({ store, onVoteChange }) {
                 +
               </Button>
             </div>
-            <Link href="/purchase">
+            <Link href="/product">
               <Button className="bg-yellow-400 hover:bg-yellow-500 text-black">
                 購入
               </Button>
