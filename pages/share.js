@@ -34,7 +34,7 @@ function NavBar() {
           "flex h-16 items-center px-4 max-w-7xl mx-auto justify-end space-x-8",
       },
       React.createElement(NavItem, { href: "/" }, "ホーム"),
-      React.createElement(NavItem, { href: "/products" }, "商品ページ"),
+      React.createElement(NavItem, { href: "/product" }, "商品ページ"),
       React.createElement(NavItem, { href: "/schedule" }, "配達スケジュール"),
       React.createElement(NavItem, { href: "/purchase" }, "購入")
     )
