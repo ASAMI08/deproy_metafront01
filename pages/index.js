@@ -34,7 +34,7 @@ function Footer() {
             <h3 className="font-bold mb-4">商品概要</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-600 hover:text-gray-900">
+                <Link href="/vote" className="text-gray-600 hover:text-gray-900">
                   Costco
                 </Link>
               </li>
