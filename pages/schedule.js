@@ -143,21 +143,27 @@ return (
     {/* Navigation */}
     <nav className="flex justify-end p-4">
       <div className="space-x-4">
+  　　　<li>
         <Link href="/">
           <button className="bg-[#E6B422] hover:bg-[#D4A41B] text-white font-medium px-8 py-2 rounded">
             投票
           </button>
         </Link>
+       </li>
+       <li>
         <Link href="/schedule">
           <button className="bg-[#E6B422] hover:bg-[#D4A41B] text-white font-medium px-8 py-2 rounded">
             配達スケジュール
           </button>
         </Link>
+       </li>
+       <li>
         <Link href="/purchase">
           <button className="bg-[#E6B422] hover:bg-[#D4A41B] text-white font-medium px-8 py-2 rounded">
             購入
           </button>
         </Link>
+       </li>
       </div>
     </nav>
 
