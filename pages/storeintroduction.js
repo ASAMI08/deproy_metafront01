@@ -1,8 +1,5 @@
-        <Link href="/">
-          <Button className="bg-[#F2B950] hover:bg-[#E6A840] text-white">
-            投票
-          </Button>
-        </Link>import { useEffect } from "react";
+import { useEffect } from "react";
+import Link from "next/link";
 
 export default function StorePage() {
   useEffect(() => {
