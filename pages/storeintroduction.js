@@ -1,4 +1,8 @@
-import { useEffect } from "react";
+        <Link href="/">
+          <Button className="bg-[#F2B950] hover:bg-[#E6A840] text-white">
+            投票
+          </Button>
+        </Link>import { useEffect } from "react";
 
 export default function StorePage() {
   useEffect(() => {
@@ -21,8 +25,8 @@ export default function StorePage() {
       <div class="min-h-screen bg-[#FFF8E1]">
         <!-- Header Buttons -->
         <div class="flex justify-end gap-4 p-4">
-          <button onclick="window.location.href='/vote'" class="bg-[#F4B63C] hover:bg-[#DFA22F] text-black px-4 py-2 rounded">投票</button>
-          <button onclick="window.location.href='/delivery-schedule'" class="bg-[#F4B63C] hover:bg-[#DFA22F] text-black px-4 py-2 rounded">配達スケジュール</button>
+          <button onclick="window.location.href='/'" class="bg-[#F4B63C] hover:bg-[#DFA22F] text-black px-4 py-2 rounded">投票</button>
+          <button onclick="window.location.href='/schedule'" class="bg-[#F4B63C] hover:bg-[#DFA22F] text-black px-4 py-2 rounded">配達スケジュール</button>
         </div>
 
         <!-- Store Title Section -->
